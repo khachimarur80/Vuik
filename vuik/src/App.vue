@@ -1,14 +1,14 @@
 <template>
-  <vk-navbar-1/>
+  <vk-navbar/>
 </template>
 
 <script>
-import vkNavbar1 from './components/navbar/vk-navbar-1.vue'
+import vkNavbar from './components/navbar/vk-navbar-2.vue'
 
 export default {
   name: 'App',
   components: {
-    vkNavbar1
+    vkNavbar
   },
   data: () => ({
     theme: {
