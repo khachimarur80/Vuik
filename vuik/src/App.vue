@@ -1,14 +1,17 @@
 <template>
   <vk-navbar/>
+  <vkHero/>
 </template>
 
 <script>
 import vkNavbar from './components/navbar/vk-navbar-2.vue'
+import vkHero from './components/hero/vk-hero-1.vue'
 
 export default {
   name: 'App',
   components: {
-    vkNavbar
+    vkNavbar,
+    vkHero
   },
   data: () => ({
     theme: {
@@ -21,10 +24,10 @@ export default {
       success: '#4CAF50',
       text: '#333',
       text_secondary: '#666',
-      text_light: '#999',
+      text_light: '#eee',
       text_dark: '#111',
       background: '#f9f9f9',
-      background_dark: '#e0e0e0',
+      background_dark: '#888',
       background_light: '#ffffff',
       text_font: 'HelveticaNeue-Thin',
       title_font: 'HelveticaNeue',

@@ -46,6 +46,8 @@ export default {
     flex-wrap: wrap;
     gap: 20px;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
   }
   .navbar-header {
     width: fit-content;
@@ -122,7 +124,7 @@ export default {
     }
   }
 
-  @media (min-width: 493px) and (max-width: 690px) {
+  @media (min-width: 493px) and (max-width: 700px) {
     .navbar-header {
       height: 130px;
     }

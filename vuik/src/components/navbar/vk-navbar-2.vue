@@ -56,6 +56,7 @@ export default {
     padding: 10px;
     display: flex;
     gap: 20px;
+    z-index: 1;
   }
   .navbar-logo {
     height: 100%;
@@ -70,8 +71,9 @@ export default {
     align-items: center;
     margin-right: 10px;
     font-size: 35px;
-    color: var(--vk-text);
+    color: var(--vk-text-light);
     font-family: var(--vk-title-font);
+    user-select: none;
   }
   .navbar-items {
     flex: 1;
@@ -86,11 +88,12 @@ export default {
   .navbar-item {
     text-decoration: none;
     min-width: fit-content;
-    color: var(--vk-text);
+    color: var(--vk-text-light);
     font-size: 18px;
     padding: 3px 8px 3px 8px;
     position: relative;
     z-index: 2;
+    transition: color .3s ease-out
   }
   .navbar-item:before {
     transition: background .15s ease-out;
@@ -101,17 +104,17 @@ export default {
     left: 0;
     position: absolute;
     background-color: transparent;
-    filter: opacity(.3);
+    filter: opacity(.5);
     border-radius: 6px;
     z-index: -1;
   }
   .navbar-item:hover:before {
-    background: var(--vk-background-light);
+    background: var(--vk-background-dark);
   }
 
   @media (max-width: 492px) {
     .navbar-header {
-      height: 120px;
+      height: 80px;
     }
     .navbar {
       height: fit-content;
@@ -124,9 +127,9 @@ export default {
     }
   }
 
-  @media (min-width: 493px) and (max-width: 690px) {
+  @media (min-width: 493px) and (max-width: 700px) {
     .navbar-header {
-      height: 130px;
+      height: 80px;
     }
     .navbar {
       height: fit-content;
