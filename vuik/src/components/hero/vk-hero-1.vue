@@ -35,8 +35,8 @@ export default {
       alt: '',
     },
     hero: {
-      src: require('@/assets/images/hero.webp'),
-      lazySrc: require('@/assets/lazy-images/hero.webp'),
+      src: require('@/assets/images/hero/hero.webp'),
+      lazySrc: require('@/assets/lazy-images/hero/hero.webp'),
       alt: '',
     },
     slogan: "Oak Harbor's Top Rated Painting Contractors",
@@ -84,8 +84,8 @@ export default {
   }
   .text {
     font-size: 25px;
-    font-family: var(--vk-title-text);
     max-width: 800px;
+    font-family: var(--vk-text-font);
   }
   .action {
     margin: 30px;

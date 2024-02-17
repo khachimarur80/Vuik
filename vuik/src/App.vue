@@ -1,17 +1,20 @@
 <template>
   <vk-navbar/>
   <vkHero/>
+  <vkServices/>
 </template>
 
 <script>
 import vkNavbar from './components/navbar/vk-navbar-2.vue'
 import vkHero from './components/hero/vk-hero-1.vue'
+import vkServices from './components/services/vk-services-1.vue'
 
 export default {
   name: 'App',
   components: {
     vkNavbar,
-    vkHero
+    vkHero,
+    vkServices,
   },
   data: () => ({
     theme: {
